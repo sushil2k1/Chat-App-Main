@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply to all scrollbars globally */
+* {
+    scrollbar-width: thin; /* For Firefox */
+}
+
+/* WebKit scrollbar styles for all elements */
+*::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background for the track */
+    border-radius: 6px; /* Rounded corners for the track */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent color for the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
